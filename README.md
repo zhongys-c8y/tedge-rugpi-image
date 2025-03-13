@@ -13,7 +13,7 @@ This repository is based on the [thin-edge.io image using Rugpi]('https://github
 
 ## TODO:
 
-- Check if the folked "thin-edge.io image using Rugpi" still work with v0.8 Rugix]('https://oss.silitics.com/rugix/docs/upgrading-from-v0.7')
+- Check if the folked "thin-edge.io image using Rugpi" still work with [v0.8 Rugix]('https://oss.silitics.com/rugix/docs/upgrading-from-v0.7')
 - Add/change the layer(s) for Alpine 
 - Create recipe(s) to install/uninstall apk packages 
 - Create recipe(s) to install tedge-container-plugin and tedge-apk-plugin
