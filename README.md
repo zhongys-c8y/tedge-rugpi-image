@@ -1,3 +1,29 @@
+# thin-edge.io image using Rugpi for Omron PC
+
+This repository is based on the [thin-edge.io image using Rugpi]('https://github.com/thin-edge/tedge-rugpi-image'). The goal is to build Alpine image with thin-edge.io installed using Rugpi. All the requirements should be fulfilled. 
+
+## Omron's requirements 
+
+- Alpine OS
+- No apk packages with GPL-v3 license 
+- Include packages: gptfdisk, hwdata, dmidecode, pcituils, logrotate, btop, openssh, openrc, sudo, sysklogd, openntpd 
+- With thin-edge.io installed 
+- Use their own tested secure boot process, GRUB is not allowed 
+- Plus: with tedge-apk-plugin and tedge-container-plugin installed 
+
+## TODO:
+
+- Check if the folked "thin-edge.io image using Rugpi" still work with v0.8 Rugix]('https://oss.silitics.com/rugix/docs/upgrading-from-v0.7')
+- Add/change the layer(s) for Alpine 
+- Create recipe(s) to install/uninstall apk packages 
+- Create recipe(s) to install tedge-container-plugin and tedge-apk-plugin
+- Configure Omron's bootloader as an [Unknown Target]('https://oss.silitics.com/rugix/docs/bakery/systems#targets')
+
+
+------------
+Original README: 
+--------------
+
 # thin-edge.io image using Rugpi
 
 The repository can be used to build custom Raspberry Pi images with thin-edge.io and [Rugpi](https://oss.silitics.com/rugpi/) for robust OTA Operating System updates.
