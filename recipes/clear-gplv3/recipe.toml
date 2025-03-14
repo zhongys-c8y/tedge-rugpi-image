@@ -1,0 +1,6 @@
+description = "recipe for clearing all apk packages with GPLv3 license"
+
+dependencies = [
+    # Update the package lists such that we can install Nginx.
+    "core/pkg-update"
+]
